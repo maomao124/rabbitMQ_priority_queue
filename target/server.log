@@ -1,0 +1,14 @@
+2022-04-25 15:15:01.644  INFO 15488 --- [main] m.r.RabbitMqPriorityQueueApplication     : Starting RabbitMqPriorityQueueApplication v0.0.1-SNAPSHOT using Java 16.0.2 on mao with PID 15488 (H:\程序\大三下期\rabbitMQ优先级队列\target\rabbitMQ_priority_queue-0.0.1-SNAPSHOT.jar started by mao in H:\程序\大三下期\rabbitMQ优先级队列\target)
+2022-04-25 15:15:01.648 DEBUG 15488 --- [main] m.r.RabbitMqPriorityQueueApplication     : Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-04-25 15:15:01.649  INFO 15488 --- [main] m.r.RabbitMqPriorityQueueApplication     : The following 1 profile is active: "dev"
+2022-04-25 15:15:02.830  INFO 15488 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-25 15:15:02.841  INFO 15488 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-25 15:15:02.842  INFO 15488 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-25 15:15:02.928  INFO 15488 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-25 15:15:02.928  INFO 15488 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1222 ms
+2022-04-25 15:15:03.659  INFO 15488 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-25 15:15:03.663  INFO 15488 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [127.0.0.1:5672]
+2022-04-25 15:15:03.740  INFO 15488 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#662f5666:0/SimpleConnection@69adf72c [delegate=amqp://admin@127.0.0.1:5672/, localPort= 57898]
+2022-04-25 15:15:03.748  INFO 15488 --- [main] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable or auto-delete Exchange (priority_exchange) durable:false, auto-delete:false. It will be deleted by the broker if it shuts down, and can be redeclared by closing and reopening the connection.
+2022-04-25 15:15:03.748  INFO 15488 --- [main] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (priority_queue) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2022-04-25 15:15:03.813  INFO 15488 --- [main] m.r.RabbitMqPriorityQueueApplication     : Started RabbitMqPriorityQueueApplication in 2.742 seconds (JVM running for 3.169)

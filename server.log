@@ -1,3 +1,14 @@
 2022-04-25 15:13:02.444  INFO 4628 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
 2022-04-25 15:13:02.925  INFO 4628 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
 2022-04-25 15:13:02.953  INFO 4628 --- [SpringApplicationShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is already stopped
+2022-04-25 15:14:26.858  INFO 14084 --- [main] .r.RabbitMqPriorityQueueApplicationTests : Starting RabbitMqPriorityQueueApplicationTests using Java 16.0.2 on mao with PID 14084 (started by mao in H:\程序\大三下期\rabbitMQ优先级队列)
+2022-04-25 15:14:26.859 DEBUG 14084 --- [main] .r.RabbitMqPriorityQueueApplicationTests : Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-04-25 15:14:26.860  INFO 14084 --- [main] .r.RabbitMqPriorityQueueApplicationTests : The following 1 profile is active: "dev"
+2022-04-25 15:14:28.902  INFO 14084 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [127.0.0.1:5672]
+2022-04-25 15:14:28.960  INFO 14084 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#78e17a99:0/SimpleConnection@1310fcb0 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 57878]
+2022-04-25 15:14:28.965  INFO 14084 --- [main] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable or auto-delete Exchange (priority_exchange) durable:false, auto-delete:false. It will be deleted by the broker if it shuts down, and can be redeclared by closing and reopening the connection.
+2022-04-25 15:14:28.965  INFO 14084 --- [main] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (priority_queue) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2022-04-25 15:14:29.048  INFO 14084 --- [main] .r.RabbitMqPriorityQueueApplicationTests : Started RabbitMqPriorityQueueApplicationTests in 2.577 seconds (JVM running for 3.381)
+2022-04-25 15:14:29.540  INFO 14084 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2022-04-25 15:14:30.040  INFO 14084 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2022-04-25 15:14:30.042  INFO 14084 --- [SpringApplicationShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is already stopped
