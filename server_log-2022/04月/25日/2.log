@@ -1,0 +1,126 @@
+2022-04-25 15:10:36.877  INFO 5800 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2022-04-25 15:10:36.990  INFO 5800 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2022-04-25 15:10:37.012  INFO 5800 --- [SpringApplicationShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is already stopped
+2022-04-25 15:10:41.254  INFO 1208 --- [main] m.r.RabbitMqPriorityQueueApplication     : Starting RabbitMqPriorityQueueApplication using Java 16.0.2 on mao with PID 1208 (H:\程序\大三下期\rabbitMQ优先级队列\target\classes started by mao in H:\程序\大三下期\rabbitMQ优先级队列)
+2022-04-25 15:10:41.256 DEBUG 1208 --- [main] m.r.RabbitMqPriorityQueueApplication     : Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-04-25 15:10:41.257  INFO 1208 --- [main] m.r.RabbitMqPriorityQueueApplication     : The following 1 profile is active: "dev"
+2022-04-25 15:10:41.922  INFO 1208 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-25 15:10:41.928  INFO 1208 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-25 15:10:41.928  INFO 1208 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-25 15:10:42.038  INFO 1208 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-25 15:10:42.039  INFO 1208 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 748 ms
+2022-04-25 15:10:42.472  INFO 1208 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-25 15:10:42.482  INFO 1208 --- [main] m.r.RabbitMqPriorityQueueApplication     : Started RabbitMqPriorityQueueApplication in 1.562 seconds (JVM running for 2.006)
+2022-04-25 15:10:45.092  INFO 1208 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-25 15:10:45.092  INFO 1208 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-25 15:10:45.093  INFO 1208 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-25 15:10:45.108  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息1，优先级：9
+2022-04-25 15:10:45.110  INFO 1208 --- [http-nio-8080-exec-2] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [127.0.0.1:5672]
+2022-04-25 15:10:45.128  INFO 1208 --- [http-nio-8080-exec-2] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#177515d1:0/SimpleConnection@2c824b84 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 57729]
+2022-04-25 15:10:45.131  INFO 1208 --- [http-nio-8080-exec-2] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable or auto-delete Exchange (priority_exchange) durable:false, auto-delete:false. It will be deleted by the broker if it shuts down, and can be redeclared by closing and reopening the connection.
+2022-04-25 15:10:45.131  INFO 1208 --- [http-nio-8080-exec-2] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (priority_queue) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2022-04-25 15:10:45.153  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息2，优先级：2
+2022-04-25 15:10:45.153  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息3，优先级：3
+2022-04-25 15:10:45.154  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息4，优先级：2
+2022-04-25 15:10:45.154  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息5，优先级：6
+2022-04-25 15:10:45.154  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息6，优先级：9
+2022-04-25 15:10:45.154  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息7，优先级：1
+2022-04-25 15:10:45.154  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息8，优先级：0
+2022-04-25 15:10:45.155  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息9，优先级：10
+2022-04-25 15:10:45.155  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息10，优先级：1
+2022-04-25 15:10:45.155  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息11，优先级：1
+2022-04-25 15:10:45.155  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息12，优先级：3
+2022-04-25 15:10:45.156  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息13，优先级：9
+2022-04-25 15:10:45.156  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息14，优先级：6
+2022-04-25 15:10:45.156  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息15，优先级：6
+2022-04-25 15:10:45.156  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息16，优先级：4
+2022-04-25 15:10:45.157  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息17，优先级：2
+2022-04-25 15:10:45.157  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息18，优先级：4
+2022-04-25 15:10:45.157  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息19，优先级：8
+2022-04-25 15:10:45.157  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息20，优先级：7
+2022-04-25 15:10:45.158  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息21，优先级：8
+2022-04-25 15:10:45.158  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息22，优先级：4
+2022-04-25 15:10:45.158  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息23，优先级：9
+2022-04-25 15:10:45.158  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息24，优先级：6
+2022-04-25 15:10:45.158  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息25，优先级：3
+2022-04-25 15:10:45.159  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息26，优先级：0
+2022-04-25 15:10:45.159  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息27，优先级：7
+2022-04-25 15:10:45.159  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息28，优先级：1
+2022-04-25 15:10:45.159  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息29，优先级：10
+2022-04-25 15:10:45.159  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息30，优先级：7
+2022-04-25 15:10:45.160  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息31，优先级：5
+2022-04-25 15:10:45.160  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息32，优先级：4
+2022-04-25 15:10:45.160  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息33，优先级：5
+2022-04-25 15:10:45.160  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息34，优先级：2
+2022-04-25 15:10:45.161  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息35，优先级：1
+2022-04-25 15:10:45.161  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息36，优先级：8
+2022-04-25 15:10:45.161  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息37，优先级：5
+2022-04-25 15:10:45.161  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息38，优先级：2
+2022-04-25 15:10:45.161  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息39，优先级：8
+2022-04-25 15:10:45.161  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息40，优先级：7
+2022-04-25 15:10:45.162  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息41，优先级：9
+2022-04-25 15:10:45.162  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息42，优先级：2
+2022-04-25 15:10:45.162  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息43，优先级：9
+2022-04-25 15:10:45.162  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息44，优先级：7
+2022-04-25 15:10:45.162  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息45，优先级：1
+2022-04-25 15:10:45.163  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息46，优先级：1
+2022-04-25 15:10:45.163  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息47，优先级：5
+2022-04-25 15:10:45.163  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息48，优先级：9
+2022-04-25 15:10:45.163  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息49，优先级：1
+2022-04-25 15:10:45.163  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息50，优先级：10
+2022-04-25 15:10:45.163  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息51，优先级：2
+2022-04-25 15:10:45.164  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息52，优先级：8
+2022-04-25 15:10:45.164  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息53，优先级：8
+2022-04-25 15:10:45.164  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息54，优先级：2
+2022-04-25 15:10:45.164  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息55，优先级：9
+2022-04-25 15:10:45.164  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息56，优先级：1
+2022-04-25 15:10:45.164  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息57，优先级：1
+2022-04-25 15:10:45.165  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息58，优先级：1
+2022-04-25 15:10:45.165  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息59，优先级：9
+2022-04-25 15:10:45.165  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息60，优先级：1
+2022-04-25 15:10:45.165  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息61，优先级：9
+2022-04-25 15:10:45.165  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息62，优先级：10
+2022-04-25 15:10:45.165  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息63，优先级：3
+2022-04-25 15:10:45.165  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息64，优先级：7
+2022-04-25 15:10:45.166  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息65，优先级：9
+2022-04-25 15:10:45.166  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息66，优先级：1
+2022-04-25 15:10:45.166  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息67，优先级：4
+2022-04-25 15:10:45.166  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息68，优先级：2
+2022-04-25 15:10:45.166  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息69，优先级：4
+2022-04-25 15:10:45.166  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息70，优先级：3
+2022-04-25 15:10:45.167  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息71，优先级：7
+2022-04-25 15:10:45.167  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息72，优先级：2
+2022-04-25 15:10:45.167  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息73，优先级：3
+2022-04-25 15:10:45.167  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息74，优先级：0
+2022-04-25 15:10:45.167  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息75，优先级：9
+2022-04-25 15:10:45.167  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息76，优先级：8
+2022-04-25 15:10:45.168  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息77，优先级：3
+2022-04-25 15:10:45.168  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息78，优先级：4
+2022-04-25 15:10:45.168  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息79，优先级：1
+2022-04-25 15:10:45.168  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息80，优先级：8
+2022-04-25 15:10:45.168  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息81，优先级：9
+2022-04-25 15:10:45.168  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息82，优先级：7
+2022-04-25 15:10:45.169  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息83，优先级：3
+2022-04-25 15:10:45.169  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息84，优先级：0
+2022-04-25 15:10:45.169  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息85，优先级：1
+2022-04-25 15:10:45.169  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息86，优先级：2
+2022-04-25 15:10:45.169  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息87，优先级：6
+2022-04-25 15:10:45.170  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息88，优先级：1
+2022-04-25 15:10:45.170  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息89，优先级：7
+2022-04-25 15:10:45.170  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息90，优先级：4
+2022-04-25 15:10:45.170  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息91，优先级：1
+2022-04-25 15:10:45.170  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息92，优先级：3
+2022-04-25 15:10:45.170  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息93，优先级：7
+2022-04-25 15:10:45.170  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息94，优先级：10
+2022-04-25 15:10:45.171  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息95，优先级：8
+2022-04-25 15:10:45.171  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息96，优先级：5
+2022-04-25 15:10:45.171  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息97，优先级：5
+2022-04-25 15:10:45.171  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息98，优先级：2
+2022-04-25 15:10:45.171  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息99，优先级：5
+2022-04-25 15:10:45.171  INFO 1208 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：消息100，优先级：7
+2022-04-25 15:12:05.104  INFO 4628 --- [main] m.r.RabbitMqPriorityQueueApplication     : Starting RabbitMqPriorityQueueApplication using Java 16.0.2 on mao with PID 4628 (H:\程序\大三下期\rabbitMQ优先级队列\target\classes started by mao in H:\程序\大三下期\rabbitMQ优先级队列)
+2022-04-25 15:12:05.106 DEBUG 4628 --- [main] m.r.RabbitMqPriorityQueueApplication     : Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-04-25 15:12:05.107  INFO 4628 --- [main] m.r.RabbitMqPriorityQueueApplication     : The following 1 profile is active: "dev"
+2022-04-25 15:12:05.791  INFO 4628 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-25 15:12:05.797  INFO 4628 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-25 15:12:05.797  INFO 4628 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
